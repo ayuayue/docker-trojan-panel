@@ -3,21 +3,22 @@
 
 # 安装 docker-compose
 
+```
 curl -L https://github.com/docker/compose/releases/download/1.25.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
 
 chmod +x /usr/local/bin/docker-compose
 
 docker-compose --version
-
+```
 # 清理历史镜像
-
+```
 docker rm trojan-panel-caddy
 docker rm trojan-panel-ui
 docker rm trojan-panel-core
 docker rm trojan-panel
 docker rm trojan-panel-redis
 docker rm trojan-panel-mariadb
-
+```
 # 修改配置
 
 根据 .env 中注释，修改配置
@@ -34,8 +35,9 @@ docker rm trojan-panel-mariadb
 然后使用 docker-compose up -d 后台运行
 
 # 重启
+```
 docker-compose restart
-
+```
 # 问题排查
 1. 确保安装了 docker-compose
 2. 确保在 tpdata/cert 目录放了证书文件，并证书文件名正确及证书可用
