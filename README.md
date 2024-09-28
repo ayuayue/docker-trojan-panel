@@ -33,6 +33,8 @@ docker rm trojan-panel-mariadb
 
 然后使用 docker-compose up -d 后台运行
 
+# 重启
+docker-compose restart
 
 # 问题排查
 1. 确保安装了 docker-compose
