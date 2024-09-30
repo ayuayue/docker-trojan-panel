@@ -2,3 +2,4 @@
 .idea
 tpdata/trojan-panel-ui/nginx/logs
 tpdata/caddy/logs
+logs
